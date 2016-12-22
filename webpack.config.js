@@ -18,13 +18,13 @@ module.exports = {
 		// listen to code updates emitted by hot middleware:
 		//'webpack-hot-middleware/client',
 
-		'./app/index.es6' // Your appʼs entry point
+		'./main.js' // Your appʼs entry point
 	],
 
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: "/dist/",
-		filename: 'js/xz.js'
+		publicPath: "",
+		filename: 'bundle.js'
 	},
 
 	devServer: {
@@ -67,7 +67,7 @@ module.exports = {
 		// 	}
 		// }),
 
-		new ExtractTextPlugin('css/xz.css'),
+		new ExtractTextPlugin('app.css'),
 	],
 
 	module: {
