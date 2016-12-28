@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="app.css">
-    <script src="bundle.js"></script>
+    <title>vue</title>
+   <script src="dist/bundle.js"></script>
 </head>
 <body>
-<p> hello </p>
-
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
 </body>
 </html>
